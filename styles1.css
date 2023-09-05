@@ -352,7 +352,7 @@ h2 {
     width: fit-content;
   }
 }
-#tel-bubble {
+#contact-bubble {
   position: fixed;
   z-index: 2;
   top: 50px;
@@ -368,7 +368,7 @@ h2 {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-#tel-bubble:hover {
+#contact-bubble:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }

@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-text {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+/*menu style  */
+
+ul {
+  background-color: #1e2939; /* grey color */
+  list-style-type: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: #fb6d3a;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 15px 45px;
+  display: block;
+}
+
+a:hover {
+  color: white;
+}
+
+.about {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 24px;
+}
+
+body {
+  margin-left: 22px;
+  background: white;
+  min-height: 100vh;
+}
+
+.color-2 {
+  color: #fb6d3a;
+  font-family: "Montserrat Alternates";
+  font-weight: bold;
+}
+
+.color-1 {
+  margin-left: 50px;
+  color: black;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: larger;
+}
+
+p {
+  margin-left: 30px;
+}
+
+.text-preturi {
+  font-weight: bold;
+  text-align: justify;
+  font-size: 14px;
+  color: rgb(32, 36, 82);
+}
+
+.caseta-detalii {
+  background-color: #081e90;
+  box-sizing: border-box;
+  color: orange;
+  display: block;
+  font-family: Arial;
+  font-size: large;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 5px;
+}
+
+/* img */
+.logo {
+  margin-top: 1px;
+  height: 12vw;
+  width: 12vw;
+  justify-content: left;
+  display: inline-flex;
+}
+
+.img {
+  margin-top: 1px;
+  margin-left: calc(30%);
+  margin-top: 1px;
+  height: 7vw;
+  display: inline-flex;
+}
+
+.reverse {
+  transform: scaleX(-1);
+  height: 7vw;
+  display: inline-flex;
+}
+
+/**  text font **/
+h2 {
+  text-align: center;
+}
+
+/** card proprieties  **/
+
+.card {
+  background-color: #1e2939;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgb #1e2939;
+  overflow: hidden;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.container {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  opacity: 0.6;
+}
+
+.card1 > .container:after {
+  background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+}
+.card2 > .container:after {
+  background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+.card3 > .container:after {
+  background-image: linear-gradient(135deg, #ffab1d, #f8501c);
+}
+
+.details {
+  padding: 20px 10px;
+}
+.details > h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+.details > h3:hover {
+  color: #fb6d3a;
+}
+.details > p {
+  color: #a0a0a0;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+/** Button properties  **/
+
+.btn {
+  background-color: #1e2939;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fb6d3a;
+}
+.more-button {
+  display: block;
+  margin-top: 10px;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+}
+
+.pic-van {
+  position: fixed;
+  justify-items: left;
+}
+
+/**Contact section **/
+
+.contact {
+  position: relative;
+  height: fit-content;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(/img/cutii-contact.jpg);
+  background-size: cover;
+  border-radius: 5px;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+}
+.contact .content p {
+  font-weight: 300;
+  color: black;
+}
+.container2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.container2 .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container2 .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.container2 .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: black;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container2 .contactInfo .box .text h3 {
+  color: #2bdcf3;
+  font-weight: 500;
+}
+.contactForm {
+  width: 60%;
+  padding: 40px;
+  background: #fff;
+  border-radius: 5px;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm
+  .inputBox
+  input:valid
+  ~ span
+  .contactForm
+  .inputBox
+  textarea:focus
+  ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"] {
+  width: 100%;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+@media (max-width: 991px) {
+  .contact {
+    padding: 50px;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  .container2 .contactInfo {
+    margin-bottom: 40px;
+  }
+  .container2 .contactInfo .contactForm {
+    width: 100%;
+  }
+}
+
+@media (min-width: 360px) {
+  nav {
+    width: fit-content;
+  }
+}
+#tel-bubble {
+  position: fixed;
+  z-index: 2;
+  top: 50px;
+  right: 15px;
+  width: 150px;
+  height: 55px;
+  background-color: rgb(235, 176, 37);
+  border-radius: 15%;
+  color: #0e28bd;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#tel-bubble:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}

@@ -215,7 +215,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(/img/cutii-contact.jpg);
+  background: url(cutii-contact.jpg);
   background-size: cover;
   border-radius: 5px;
 }
